@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS dbname;
+CREATE DATABASE dbname;
+USE dbname;
+
+CREATE TABLE member (
+memberID INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255),
+PRIMARY KEY(memberID)
+);
+
+CREATE TABLE login (
+loginID INT NOT NULL AUTO_INCREMENT,
+memberFK INT,
+username VARCHAR(255),
+password VARCHAR(255),
+PRIMARY KEY(loginID),
+FOREIGN KEY(memberFK) REFERENCES member(memberID)
+);
