@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Jukebox Login</title>
+		<meta name="author" content="Georgiy, Talant, Rayan, Andrej, Dogukan">
+		<meta name="description" content="60's Jukebox">
+		<link rel="shortcut icon" href="img/Logo1.JPG">
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700&display=swap" rel="stylesheet"> 
+	</head>
+	
+	<body>
+        <!-- Buttons, um die Farben zu ändern -->
+      <button id="blueB" class="clr">Blau</button>
+      <button id="greenB" class="clr">Grün</button>
+      <button id="orangeB" class="clr">Orange</button>
+        <h1 id="loginTitle">Login</h1>
+        <form id="loginForm">
+          <input type="text" name="Name" placeholder="Name"><br>
+          <input type="text" name="Passwort" placeholder="Passwort"><br>
+          <input type="submit" value="Submit" id="submit">
+        </form>
+        <p id="loginError">Bitte geben Sie alle Daten ein!</p>
+
+        <!-- Javascript, um die Farben zu ändern -->
+    <script language = "javascript" type="text/javascript">
+
+      var wallpaper = document.getElementById("wallpaper");
+      var htmlElement = document.getElementsByTagName("html")[0];
+
+    document.getElementById("blueB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#99B1C9";
+      htmlElement.style.backgroundImage='url("img/BlueSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#345D98";
+      wallpaper.style.backgroundImage='url("img/BlueLiquid.svg")';
+    };
+
+    document.getElementById("greenB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#B0DABE";
+      htmlElement.style.backgroundImage='url("img/GreenSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#3A7359";
+      wallpaper.style.backgroundImage='url("img/GreenLiquid.svg")';
+    };
+
+    document.getElementById("orangeB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#e4a423";
+      htmlElement.style.backgroundImage='url("img/OrangeSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#e73d29";
+      wallpaper.style.backgroundImage='url("img/OrangeLiquid.svg")';
+    };
+  </script>
+	</body>
+</html>

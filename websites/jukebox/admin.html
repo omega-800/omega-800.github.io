@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Jukebox Admin</title>
+		<meta name="author" content="Georgiy, Talant, Rayan, Andrej, Dogukan">
+		<meta name="description" content="60's Jukebox">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="shortcut icon" href="img/Logo1.JPG">
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700&display=swap" rel="stylesheet"> 
+	</head>
+	
+	<body>
+    <!-- Erste Section mit dem Login Button und dem Titel -->
+		<div id="firstAdmin">
+        <!-- Buttons, um die Farben zu ändern -->
+      <button id="blueB" class="clr">Blau</button>
+      <button id="greenB" class="clr">Grün</button>
+      <button id="orangeB" class="clr">Orange</button>
+      <p id="infoA">Logged in as Admin</p>
+      <button id="logout">Logout</button>
+        <h1 id="titleAdmin">Admin Tool</h1>
+      <a  href="#adminMain"><img id="arrow" src="img/arrow_down.svg"></a>
+		</div>
+
+		<!-- Zweite Section mit der Jukebox -->
+    <div id="wallpaper">    
+    <div id="adminMain">
+		<div id="songsAdmin">
+      <div id="paddingDIVAdmin">
+      <h2>Bearbeiten</h2>
+      <img id="logo" src="img/Logo1.JPG">
+      </div>
+
+      <!-- Tabelle mit allen Liedern, nach Zahlen und Buchstaben geordnet -->
+			<table id="adminTable">
+			  <tr>
+				<td class="number">A1</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">B1</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">C1</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+			  </tr>
+			  <tr>
+				<td class="number">A2</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">B2</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">C2</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+			  </tr>
+			  <tr>
+				<td class="number">A3</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">B3</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">C3</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+			  </tr>
+			  <tr>
+				<td class="number">A4</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">B4</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+				<td class="number">C4</td>
+				<td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+			  </tr>
+        <tr>
+        <td class="number">A5</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">B5</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">C5</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        </tr>
+        <tr>
+        <td class="number">A6</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">B6</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">C6</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        </tr>
+        <tr>
+        <td class="number">A7</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">B7</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">C7</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        </tr>
+        <tr>
+        <td class="number">A8</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">B8</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        <td class="number">C8</td>
+        <td class="titleA">Artist<br>Title</td>
+        <td class="delete">X</td>
+        </tr>
+			</table> 
+    </div>
+
+    <!-- Dritte Section für den Upload eigener Lieder -->
+    <div id="dragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="dragdrop1">
+        <img id="cloudIMG" src="img/cloud_upload.svg">
+        <p id="infoText">Drag and drop, um ein Lied hinzuzufügen</p>
+        <p id="error">Bitte geben Sie alle Daten ein!</p> 
+      </div>
+
+      <!-- Formular, um die Angaben des Lieds einzugeben -->
+      <div id="dragdrop2">
+        <form id="uploadForm">
+          <div id="leftU">
+          <input type="text" name="artist" placeholder="Artist"><br>
+          <input type="text" name="title" placeholder="Title"><br>
+          <input type="text" name="genre" placeholder="Genre"><br>
+        </div>
+        <div id="rightU">
+          <input type="text" name="id" placeholder="ID (zB. A3)"><br>
+          <input type="submit" value="Submit" id="submit">
+        </div>
+        </form>
+      </div>
+    </div> 
+    </div>
+  </div>
+        <!-- Javascript, um die Farben zu ändern -->
+  <script language = "javascript" type="text/javascript">
+
+      var wallpaper = document.getElementById("wallpaper");
+      var logout = document.getElementById("logout");
+      var htmlElement = document.getElementsByTagName("html")[0];
+
+    document.getElementById("blueB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#99B1C9";
+      htmlElement.style.backgroundImage='url("img/BlueSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#345D98";
+      wallpaper.style.backgroundImage='url("img/BlueLiquid.svg")';
+
+      logout.style.backgroundColor="rgba(153, 177, 201, 0.8)";
+    };
+
+    document.getElementById("greenB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#B0DABE";
+      htmlElement.style.backgroundImage='url("img/GreenSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#3A7359";
+      wallpaper.style.backgroundImage='url("img/GreenLiquid.svg")';
+      
+      logout.style.backgroundColor="rgba(176, 218, 190, 0.8)";
+    };
+
+    document.getElementById("orangeB").onclick = function() {
+      
+      htmlElement.style.backgroundColor="#e4a423";
+      htmlElement.style.backgroundImage='url("img/OrangeSunburst.svg")';
+
+      wallpaper.style.backgroundColor="#e73d29";
+      wallpaper.style.backgroundImage='url("img/OrangeLiquid.svg")';
+
+      logout.style.backgroundColor="rgba(105, 25, 27, 0.8)";
+    };
+  </script>
+	</body>
+</html>
