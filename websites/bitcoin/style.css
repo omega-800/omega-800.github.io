@@ -1,0 +1,112 @@
+*{
+  	font-family: Verdana, sans-serif;
+  	text-align: center;
+	color:#1a0d00;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+h1{
+	padding:1em;
+	margin: 0;
+}
+
+html{
+	background-color: #fff2e6;
+}
+
+header, footer{
+	background-color: #ffd9b3;
+	padding: 1em;
+	margin:1em;
+}
+
+body{
+	margin: 1em;
+}
+
+form{
+	padding:1em;
+}
+
+.sec{
+	padding:1em;
+	margin: 1em;
+	width: 70vw;
+	margin: 0 auto;
+	background-color:#ffd9b3; 
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#log{
+	height: 20em;
+	max-height: 750px;
+	display:flex;
+	flex-direction: column-reverse;
+	overflow:auto;
+	margin: 0 auto;
+	width:100%;
+}
+
+label, select, input, button{
+	border: none;
+	background-color:#ffb366; 
+	font-size: 1em;
+	margin: 5px;
+	padding: 5px;
+}
+
+label:hover, select:hover, input:hover, button:hover{
+	border: 1px solid #663300;
+	background-color:#ffd9b3; 
+	cursor:pointer;
+	padding: 4px;
+}
+
+label:active, select:active, input:active, button:active{
+	border: none;
+	background-color:#663300; 
+	cursor:pointer;
+	padding: 5px;
+}
+
+h2{
+	border: none;
+	background-color:#ffb366; 
+	padding: 5px;
+	margin:0;
+}
+
+#second{
+	border: none;
+	background-color:#ffd9b3; 
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ffd9b3;
+}
+
+#myBar {
+  width: 10%;
+  background-color: #ffb366;
+	font-size: 1em;
+	margin: 5px;
+	padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffd9b3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffb366; 
+}

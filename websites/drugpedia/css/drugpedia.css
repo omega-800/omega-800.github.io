@@ -1,0 +1,238 @@
+/*body*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("../img/wallpaper.png");
+    background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	margin: 10px;
+}
+
+/*header*/
+header {
+	font-family: 'Krona One', sans-serif;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+	padding-bottom: 16px;
+	background: black;
+	border: solid white;
+	border-width: 0.5px;
+	border-bottom: none;
+}
+
+/*Schriften*/
+h1 {
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+h2 {
+	font-size: 30px;
+	margin-top: 4px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#implement{
+	background-color: rgba(255,255,255,0.4);
+}
+
+#thementitel {
+	background: white;
+	padding: 9px;
+	margin: 0;
+	font-size: 60px;
+}
+
+/*wrapper*/
+#wrapper {
+	margin-left: 200px;
+}
+
+/*dropdown button*/
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 26px;
+    cursor: pointer;
+	border: none;
+	width: 200px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+	width: 200px;
+	border-left: solid white;
+	border-bottom: solid white;
+	border-width: 0.5px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: grey;
+	font-size: 18px;
+	left:100%;
+	top:0;
+	width: 200px;
+	text-decoration: none;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+	text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+	text-decoration: none;
+}
+
+/*dropdown button2*/
+.dropbtn2 {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 26px;
+    cursor: pointer;
+	border: none;
+	width: 200px;
+}
+
+.dropdown2 {
+    position: absolute;
+	width: 200px;
+	border-bottom: solid white;
+	border-right: solid white;
+	border-width: 0.5px;
+	right: 10px;
+}
+
+.dropdown-content2 {
+    display: none;
+    background-color: grey;
+	font-size: 18px;
+	left: 100%;
+	top: 0;
+	width: 200px;
+}
+
+.dropdown-content2 p {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content2 a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+	text-decoration: none;
+}
+
+.dropdown-content2 a:hover {
+	background-color: black;
+	text-decoration: none;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+	text-decoration: none;
+}
+
+.dropdown2:hover .dropbtn2 {
+    background-color: grey;
+	text-decoration: none;
+}
+
+/*box*/
+.box {
+	margin-right: 200px;
+	opacity: 0.95;
+}
+
+/*Hauptseite*/
+.willkommen {
+	background: #ccffcc;
+	padding: 20px;
+}
+
+.aktuell {
+	padding: 20px;
+	background: #ccffff;
+}
+
+.warnungen {
+	padding: 20px;
+	background: #ffcccc;
+}
+
+/*Seite MDMA*/
+.mdma {
+	padding: 20px;
+	background: #ccffcc;
+
+}
+
+.wirkung {
+	padding: 20px;
+	background: #ccffff;
+}
+
+/*Seite Safer Use*/
+.dss {
+	background: #ccffcc;
+	padding: 20px;
+}
+
+.drug {
+	padding: 20px;
+	background: #ccffff;
+}
+
+.set {
+	padding: 20px;
+	background: #ffcccc;
+}
+
+.setting {
+	padding: 20px;
+	background: #eeccff;
+}
+
+/*nach oben knopf*/
+#oben {
+	padding: 10px;
+	background: black;
+	color: white;
+	border: solid white;
+	border-width: 0.5px;
+	text-decoration: none;
+}
+
+footer {
+	background: white;
+	width: 250px;
+}
