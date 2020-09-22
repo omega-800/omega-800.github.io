@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Hotel Vallora - Wegweiser</title>
+		<link rel="Stylesheet" href="..\css\styles_vallora.css"/>
+	</head>
+	
+	<body>
+		<div class="box">
+				<!--Dropdown Button-->
+			<div class="dropdown">
+				<button class="dropbtn">Links</button>
+				<div class="dropdown-content">
+					<a href="../hotel_vallora.html" target="_blank">Startseite</a>
+					<a href="wegweiser.html">Wegweiser</a>
+					<a href="ausfluege.html" target="_blank">Ausflüge</a>
+					<a href="ueberuns.html" target="_blank">Über uns</a>
+					<a href="restaurant/speisekarte.html" target="_blank">Speisekarte</a>
+					<a href="restaurant/spezialitaeten.html" target="_blank">Spezialitäten</a>
+					<a href="aktuell/veranstaltungen.html" target="_blank">Veranstaltungen</a>
+				</div>
+			</div>
+			<h1>Wegweiser</h1>
+			
+		<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+		<script>
+		function myMap() {
+		var mapOptions = {
+			center: new google.maps.LatLng(51.5, -0.12),
+			zoom: 10,
+			mapTypeId: google.maps.MapTypeId.HYBRID
+		}
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+					
+		</div>
+	</body>
+</html>
